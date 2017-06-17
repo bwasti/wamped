@@ -58,6 +58,7 @@ void Wamp::connect(std::function<void()> onJoin, std::function<void()> onError) 
 }
 
 void Wamp::loggedSend(const std::string &msg) {
+    (void)msg;
     LOG("Sending " << msg << ": " << mp.getJson());
     this->transport.sendMessage(mp.getData(), mp.getUsedBuffer());
 }

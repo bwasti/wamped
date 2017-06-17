@@ -13,7 +13,7 @@
 //        limitations under the License.
 
 #include "wamped/RegisteredProcedures.h"
-#include "MsgPack.h"
+#include "mpackCPP/MsgPack.h"
 #include <iostream>
 #include <string>
 

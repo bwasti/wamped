@@ -126,7 +126,10 @@ void WampTransportRaw::decode(char *buffer, int size) {
     char prefixMSG[4];
     unsigned long int max_len_send;
     unsigned long int msgSize = 0;
+    (void)max_len_send;
+    (void)msgSize;
     int serializer_type;
+    (void)serializer_type;
 
     //LOG(DEBUG) << "Decoding Size:" << size << "Payload:" << toHexString((const unsigned char *) buffer, size);
 
